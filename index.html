@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAUTY OF BEACHES</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<style>
+    #visitor-counter {
+      font-size: 0.9rem;
+      font-weight: 300;
+      opacity: 0.5;
+      color: grey;
+      margin-left: 50px;
+      padding: 1rem;
+  }
+  
+  @font-face {
+      font-family: 'Digital7';
+      src: url('digital7.ttf') format('truetype');
+  }
+  
+  li:hover {
+      background: rgba(231, 144, 144, 0.993);
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(111, 95, 201, 0.6);
+      text-decoration: underline;
+  }
+  
+  ul li {
+      font-weight: bold;
+  }
+  
+  .marquee {
+      font-size: 30px;
+      font-weight: 800;
+      color: #cadd1d;
+      font-family: 'Digital7', sans-serif;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+      from {
+          transform: translateX(100%);
+      }
+      to {
+          transform: translateX(-100%);
+      }
+  }
+  
+  .card:hover {
+      background: linear-gradient(to right, #07525f 0%, #93ac06 100%);
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(76, 59, 177, 0.6);
+  }
+  
+  .checked {
+      color: orange;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+  }
+  
+  .bar-container {
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      color: white;
+  }
+  
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  @media (max-width: 400px) {
+      .side, .middle {
+          width: 100%;
+      }
+      .right {
+          display: none;
+      }
+  }
+  
+</style>
+</head>
+<body>
+    
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <img
+                  src="images/logo.png"
+                  height="100px"
+                  width="100pxpx"
+                   loading="fast"
+                />
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="width: 100px; padding: 40; " target="_blank">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html" style="width: 100px; padding: 40; " target="_blank" >GALLERY</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 120px; padding: 10px;">
+                  ZONE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="east.html">EAST</a></li>
+                  <li><a class="dropdown-item" href="west.html">WEST</a></li>
+                  <li><a class="dropdown-item" href="north.html">NORTH</a></li>
+                  <li><a class="dropdown-item" href="south.html">SOUTH</a></li>
+                </ul>
+              </li>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" style="width: 100px; padding: 40; " target="_blank">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="images/contact.html" style="width: 100px; padding: 40; " target="_blank">CONTACT</a>
+              </li>
+            </ul>
+            <!--form action="d-flex"  role="search"> <a href='https://www.free-counters.org/'>https://www.Free-Counters.org</a> 
+              <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=d0244865ba442935ea3e41a9de56b6ca6f84c674'></script>
+                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1082786/t/2">
+
+                </script>
+                </form>-->
+                <div id="visitor-counter">Visitors: 0</div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/1.jpg" class="d-block w-100" style="width: 500px; height: 500px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/2.jpg" class="d-block w-100" style="width: 500px; height: 500px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/3.jpg" class="d-block w-100"  style="width: 500px; height: 500px;" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h1 style=" color: rgb(14, 11, 233);
+      text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 3), 0 0 5px rgba(2, 20, 24, 0.527); font-family: 'Digital7', sans-serif;;
+      "><center><b><i><u> WELCOME TO BEAUTY OF BEACHES </u></i></b></center></h1></b>
+
+
+      <div class="card-group">
+        <div class="card">
+          <img src="images/pexels-pok-rie-33563-130879.jpg" class="card-img-top"
+            alt="Hollywood Sign on The Hill" />
+          <div class="card-body">
+            <h5 class="card-title">Essaouira</h5>
+            <p class="card-text">
+                beach all depends on the traveler. Some prefer wide stretches of sand with
+                 ample activities and throngs of people to watch, while others desire deserted
+                  shorelines with calm waters. U.S. News took this and other factors – such as 
+                  unique scenery, beach quality and overall accessibility – into consideration
+                  to determine the best beaches in the world. Want to put in your 2 cents? Cast your 
+                  vote below to help determine next year's ranking.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+                
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pexels-bella-white-201200-635279.jpg" class="card-img-top"
+            alt="Palm Springs Road" />
+          <div class="card-body">
+            <h5 class="card-title">Hammamet</h5>
+            <p class="card-text">This card has supporting text below as A beach is a narrow strip 
+              of land separating a body of water from inland areas. Beaches are usually made of sand,
+               tiny grains of rocks and minerals that have been worn down by constant pounding by 
+               wind and waves. This beach, in Pebble Beach, California, has both sandy and rocky 
+               features a natural lead-in to additional content.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pexels-pixabay-163872.jpg" class="card-img-top"
+            alt="Los Angeles Skyscrapers" />
+          <div class="card-body">
+            <h5 class="card-title">Mt Maunganui Beach</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural lead-in to
+              additional content. This card has even  A beach is a narrow strip of land separating
+               a body of water from inland areas. Beaches are usually made of sand, 
+               tiny grains of rocks and minerals that have been worn down by constant pounding 
+               by wind and waves. This beach, in Pebble Beach, California, has both sandy and 
+               rocky featureslonger content than the first to show
+              that equal height action.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </small>
+          </div>
+        </div>
+      </div>
+
+      <marquee  style=" color: rgb(224, 11, 11);
+      text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 3), 0 0 5px rgb(12, 25, 68); font-family: Matura MT Script Capitals;
+      padding-left: 390px; " >A beach is a slender stretch of land that serves as a natural boundary
+       between a body of water and inland regions. Typically composed of sand fine particles of 
+       rock and minerals shaped by the relentless forces of wind and waves beaches can also feature 
+       rocky elements. For example, Pebble Beach in California showcases a unique blend of sandy shores 
+       and rocky landscapes.Explore more at www.beautyofbeaches.com.</marquee>
+      
+      <h2 style="text-shadow: 5px 5px 5px rgba(6, 25, 34, 0.42); font-family: 'Matura MT Script Capitals', cursive; "><center>Discover the World's Most Beautiful and Renowned Beaches</center></h2>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/1card.jpg" class="card-img-top"
+              alt="Hollywood Sign on The Hill" />
+            <div class="card-body">
+              <h5 class="card-title">Tahiti</h5>
+              <p class="card-text">
+                Tahiti should be high on your list if you like your 
+                beaches paired with gourmet French cuisine with Polynesian flair. 
+                The largest of the French Polynesia islands is known for offering top-notch fare,
+                 verdant jungles, lavish hotels and sandy shores. The smaller section of Tahiti
+                  (known as Tahiti Iti) is more secluded than the larger Tahiti Nui, but both are worth seeing.
+                   Tahiti Iti's famous beach, La Plage de Maui, is highly regarded for a reason
+                    (think: sparkling sand and crystal-clear water), but the popularity comes with crowds. 
+                    Check out Papenoo Beach on Tahiti Nui for excellent surfing conditions and more breathing room</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/2card.jpg" class="card-img-top"
+              alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Maldives</h5>
+              <p class="card-text">
+                The Maldives is a tropical paradise like no other, with around 1,200 stunning islands. 
+                Each beach boasts soft white sands, swaying palms, crystal-clear waters, and breathtaking sunsets.
+                 While most public beaches have modesty requirements, resorts offer relaxing escapes, 
+                and bkini-friendly spots like Rasdhoo and Maafushi welcome more casual attire </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/4card.jpg" class="card-img-top"
+              alt="Los Angeles Skyscrapers" />
+            <div class="card-body">
+              <h5 class="card-title">Bahamas</h5>
+              <p class="card-text">With 700 islands to explore, the Bahamas offers a beach 
+                for every traveler. Enjoy luxury at resorts like Atlantis, Paradise Island, 
+                or relax on secluded private beaches. Marvel at the pink sands of Harbour Island,
+                 swim with pigs in The Exumas, or dive into underwater caves at Gold Rock Beach, 
+                 sfamously featured in Pirates of the Caribbean. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/5card.webp" class="card-img-top"
+              alt="Skyscrapers" />
+            <div class="card-body">
+              <h5 class="card-title">Turks & Caicos</h5>
+              <p class="card-text">
+                The Turks & Caicos Islands, located southeast of the Bahamas, are renowned for their spellbinding white sand beaches, crystal-clear water and an abundance of snorkeling sites. World-famous Grace Bay Beach, which boasts more than 3 miles of picture-perfect shoreline, and crescent-shaped Taylor Bay Beach, home to shallow waters excellent for families with small children, can both be found on Providenciales Island and draw sun-seekers in droves. If island-hopping is on your agenda, check out laid-back Governor's Beach on Grand Turk Island. After a long day spent lounging on the beach, travelers can retreat to their luxurious digs at one of the destination's top all-inclusive hotels.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- again blog -->
+
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/cape-le-grand-national-park-western-australia-WRLDBEACH0421-96a67960efb04c91995d0b3e89492937.webp" class="card-img-top"
+              alt="Hollywood Sign on The Hill" />
+            <div class="card-body">
+              <h5 class="card-title">embarking</h5>
+              <p class="card-text">
+                Before embarking on this exhilarating experience, a safety briefing is provided. 
+                During this briefing, the guides demonstrate the techniques and prepare you for what to
+                 expect during the zipline adventure. Whether it’s your first time or you’re a seasoned zipliner, 
+                 it’s reassuring to know that a guide will be present with you throughout the experience, 
+                 ensuring your safety and enjoyment.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/3card.jpg" class="card-img-top"
+              alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title"> River tubing</h5>
+              <p class="card-text">
+                River tubing is a dynamic island activity that your kids won’t be able to resist. You 
+                can do this as a stand-alone, or combine it with some zip-lining during your visit to YS Falls.
+                 During the river tubing activity, you’ll get to relax in a huge tube as you flow with the currents 
+                 down a river. A guide usually comes along for the adventure, and this definitely can be one of the most
+                  memorable things you do in Jamaica.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/12.webp" class="card-img-top"
+              alt="Los Angeles Skyscrapers" />
+            <div class="card-body">
+              <h5 class="card-title">perhaps</h5>
+              <p class="card-text">A perhaps less talked about feature at YS Falls is the park and gardens.
+                 However, this doesn’t diminish the beauty of this space, which boasts enchanting Ginger Lily 
+                 walkways, pockets of flowering trees, and meticulously maintained gardens. The gardens at beauty of beaches Falls
+                  are expansive, providing a serene and tranquil atmosphere where visitors can unwind and relax.
+                   It’s the perfect setting to immerse yourself in nature’s beauty.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/6card.jfif" class="card-img-top"
+              alt="Skyscrapers" />
+            <div class="card-body">
+              <h5 class="card-title">jitney</h5>
+              <p class="card-text">
+                Before you enjoy the waterfalls and natural pools at YS Falls, one of the first items on your agenda
+                 can be a tractor and jitney ride. You can actually make your way to the falls with this tractor and
+                  jitney ride, which will certainly be fun for the kids. This ride lasts around 10 minutes and it will
+                   take you from the entrance of YS Falls to the area where you can access the falls. Along the way, 
+                   you’ll get to admire the stunning scenery, which includes mountains, open fields, and majestic horses.  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <span class="heading">User Rating</span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <p>4.1 average based on 254 reviews.</p>
+  <hr style="border:3px solid #f1f1f1">
+  
+  <div class="row">
+    <div class="side">
+      <div>5 star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-5"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>150</div>
+    </div>
+    <div class="side">
+      <div>4 star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-4"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>63</div>
+    </div>
+    <div class="side">
+      <div>3 star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-3"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>15</div>
+    </div>
+    <div class="side">
+      <div>2 star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-2"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>6</div>
+    </div>
+    <div class="side">
+      <div>1 star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-1"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>20</div>
+    </div>
+  </div>
+  
+
+     <!-- !-- js -->
+<div class="container-fluid text-center bg-dark text-light">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div id="date" class="mb-3">Date: </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div id="time" class="mb-3">Time: </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div id="location" class="mb-3">Location: </div>
+        </div>
+    </div>
+  </div>
+  
+
+  
+
+ 
+  
+  
+  
+  
+  <!-- Footer start -->
+  <footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left: Add any social media or branding icons here if needed -->
+      <div class="me-5 d-none d-lg-block">
+        <!-- Social Media or Logo Section -->
+      </div>
+    </section>
+  
+    <!-- Section: Links -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column: Beautyofbeaches Description -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">BEAUTYOFBEACHES</h6>
+            <p>
+              We are passionate about bringing people closer to nature through breathtaking beach destinations. Our platform provides travel guides, tips, and the best recommendations for your next beach adventure.
+            </p>
+          </div>
+  
+          <!-- Grid column: Social Media Links -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Social Media</h6>
+            <p><a href="#!" class="text-reset"><i class="fab fa-facebook"></i> Facebook</a></p>
+            <p><a href="#!" class="text-reset"><i class="fab fa-instagram"></i> Instagram</a></p>
+            <p><a href="#!" class="text-reset"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+            <p><a href="#!" class="text-reset"><i class="fab fa-twitter"></i> Twitter</a></p>
+          </div>
+  
+          <!-- Grid column: Advertisement Links -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Advertisement Links</h6>
+            <p><a href="https://www.skyscanner.net" class="text-reset">Flights</a></p>
+            <p><a href="https://www.omio.com/buses" class="text-reset">Buses</a></p>
+            <p><a href="https://www.booking.com" class="text-reset">Hotels</a></p>
+            <p><a href="https://www.weather.com" class="text-reset">Weather</a></p>
+          </div>
+  
+          <!-- Grid column: Contact Information -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> APTECH AJ0, ALL 78005, LAGOS</p>
+            <p><i class="fas fa-envelope me-3 text-secondary"></i> info@Beautyofbeaches.com</p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> +234 817 400 6076</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> +234 814 567 89</p>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(12, 12, 12, 0.993);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://beautyofbeaches.com/" target="_blank">beautyofbeaches.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</body>
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function updateTicker() {
+  const dateElement = document.getElementById("date");
+  const timeElement = document.getElementById("time");
+  const locationElement = document.getElementById("location");
+  
+  // Get current date and time
+  const currentDate = new Date();
+  const dateString = currentDate.toDateString();
+  const timeString = currentDate.toLocaleTimeString();
+  
+  // Check if the location has not been fetched before
+  if (!localStorage.getItem("location")) 
+  {
+    // Get geolocation (latitude and longitude)
+        if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(updateLocation);
+    }
+  
+        function updateLocation(position) {
+        const latitude = position.coords.latitude.toFixed(2);
+        const longitude = position.coords.longitude.toFixed(2);
+  
+  
+            // Save location to local storage
+            localStorage.setItem("location", "Location: " + latitude + ", " + longitude);
+        };
+    }
+  
+    // Retrieve and update location from local storage to your website
+    const locationString = localStorage.getItem("location");
+  
+    // Update ticker content
+    dateElement.innerHTML = "Date: " + dateString;
+    timeElement.innerHTML = "Time: " + timeString;
+    locationElement.innerHTML = locationString;
+        }
+  
+    // Update the ticker every second
+    setInterval(updateTicker, 1000);
+  
+    // Initial update
+    updateTicker();
+    // Visitor counter
+    const counterElement = document.getElementById("visitor-counter");
+    let count = localStorage.getItem("page_view");
+    count = count === null ? 0 : parseInt(count, 10);
+    count += 1;
+    localStorage.setItem("page_view", count);
+    counterElement.innerText = `Visitors: ${count}`;
+
+    // Navbar scroll effect
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+    // Function to get and display location
+    function updateLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const { latitude, longitude } = position.coords;
+                    const apiKey = "984be0628744348386e9cdba278040";
+                    const apiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`;
+                    fetch(apiUrl)
+                        .then((response) => response.json())
+                        .then((data) => {
+                            if (data.results && data.results.length > 0) {
+                                const components = data.results[0].components;
+                                const city =
+                                    components.city ||
+                                    components.town ||
+                                    components.village ||
+                                    "Unknown city";
+                                const country = components.country || "Unknown country";
+                                const location = `${city}, ${country}`;
+                                const tickerElement = document.getElementById("ticker");
+                                tickerElement.dataset.location = location;
+                                updateTicker();
+                            } else {
+                                document.getElementById("ticker").innerText +=
+                                    " | Location: Unavailable";
+                            }
+                        })
+                        .catch((error) => {
+                            console.error("Error getting location:", error);
+                            document.getElementById("ticker").innerText +=
+                                " | Location: Unavailable";
+                        });
+                },
+                (error) => {
+                    console.error("Error getting location:", error);
+                    document.getElementById("ticker").innerText +=
+                        " | Location: Unavailable";
+                }
+            );
+        } else {
+            document.getElementById("ticker").innerText +=
+                " | Location: Unavailable";
+        }
+    }
+
+    setInterval(updateTicker, 1000);
+    updateTicker();
+    updateLocation();
+
+  
+  </script>
+</html>

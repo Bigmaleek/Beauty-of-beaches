@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap CDN down below --> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+
+  <style>
+    
+    #visitor-counter {
+      font-size: 0.9rem;
+      font-weight: 300;
+      opacity: 0.5;
+      color: grey;
+      margin-left: 50px;
+      padding: 1rem;
+  }
+    li :hover {
+      background: linear-gradient( to right, #075f07 0%, #3bac06 100%);
+      border-radius: 5px;
+      box-shadow: 10px 10px 10px rgb(37, 26, 99);
+      border-style: hidden;
+      text-decoration: underline;
+    }
+    ul li{
+      font-weight: bold ;
+    }
+    
+  
+  .marquee {
+      font-size: 30px;
+      font-weight: 800;
+      color: #cadd1d;
+      font-family: 'Digital7', sans-serif;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+      from {
+          transform: translateX(100%);
+      }
+      to {
+          transform: translateX(-100%);
+      }
+  }
+  
+  .card:hover {
+      background: linear-gradient(to right, #07525f 0%, #93ac06 100%);
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(76, 59, 177, 0.6);
+  }
+  
+  .checked {
+      color: orange;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+  }
+  
+  .bar-container {
+      width: 100%;
+      background-color: #0f0f0f;
+      text-align: center;
+      color: white;
+  }
+  </style>
+	
+</head>
+<body>
+    
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <img
+              src="logo.png"
+              height="100px"
+              width="100pxpx"
+               loading="fast"
+            />
+          </a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="width: 120px; padding: 40; " target="_blank">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="width: 120px; padding: 40; " target="_blank" > ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html" style="width: 120px; padding: 40; " target="_blank">GELLARY</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 120px; padding: 40; ">
+              BEACHES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Grid Card Final/east.html">EAST</a></li>
+              <li><a class="dropdown-item" href="Grid Card Final/et.html">WEST</a></li>
+              <li><a class="dropdown-item" href="Grid Card Final/north.html">NORTH</a></li>
+              <li><a class="dropdown-item" href="Grid Card Final/south.html">SOUTH</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="width: 120px; padding: 40; " target="_blank">CONTACT</a>
+          </li>
+        </ul>
+        <div id="visitor-counter">Visitors: 0</div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container">
+		<div class="jumbotron">
+			<h1><i class="fa fa-camera-retro"></i> BEUATY OF BEACHES</h1>
+			<p>Just a Gallary Full of Beautiful Images... </p>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="images/pexels-pok-rie-33563-168552.jpg" />
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="/images/pexels-raybilcliff-21036209.jpg" />
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="/images/pexels-bella-white-201200-635279.jpg" />
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="/images/pexels-rdne-8438101.jpg" />
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="/images/6card.jfif" />
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="images/pexels-pok-rie-33563-130879.jpg" />
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-12">
+				<div class="thumbnail">
+					<img src="/images/pexels-dsnsyj-1139541.jpg" />
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="/images/saud-beach-luzon-philippines-WRLDBEACH0421-15e2c368e7ad4495be803bd60cafa379.webp" />
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="/images/pexels-rdne-8438101.jpg"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+     <!-- Footer start -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left: Add any social media or branding icons here if needed -->
+      <div class="me-5 d-none d-lg-block">
+        <!-- Social Media or Logo Section -->
+      </div>
+    </section>
+  
+    <!-- Section: Links -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column: Beautyofbeaches Description -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">BEAUTYOFBEACHES</h6>
+            <p>
+              We are passionate about bringing people closer to nature through
+               breathtaking beach destinations. Our platform provides travel guides, 
+               tips, and the best recommendations for your next beach adventure.
+            </p>
+          </div>
+  
+          <!-- Grid column: Social Media Links -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Social Media</h6>
+            <p><a href="#!" class="text-reset"><i class="fab fa-facebook"></i> Facebook</a></p>
+            <p><a href="#!" class="text-reset"><i class="fab fa-instagram"></i> Instagram</a></p>
+            <p><a href="#!" class="text-reset"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+            <p><a href="#!" class="text-reset"><i class="fab fa-twitter"></i> Twitter</a></p>
+          </div>
+  
+          <!-- Grid column: Advertisement Links -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Advertisement Links</h6>
+            <p><a href="https://www.skyscanner.net" class="text-reset">Flights</a></p>
+            <p><a href="https://www.omio.com/buses" class="text-reset">Buses</a></p>
+            <p><a href="https://www.booking.com" class="text-reset">Hotels</a></p>
+            <p><a href="https://www.weather.com" class="text-reset">Weather</a></p>
+          </div>
+  
+          <!-- Grid column: Contact Information -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> APTECH AJ0, ALL 78005, LAGOS</p>
+            <p><i class="fas fa-envelope me-3 text-secondary"></i> info@Beautyofbeaches.com</p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> +234 817 400 6076</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> +234 814 567 89</p>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(12, 12, 12, 0.025);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://beautyofbeaches.com/" target="_blank">beautyofbeaches.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <!-- Footer -->
+  
+</body>
+
+	<!-- JQuery CDN --> 
+	<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<!-- JavaScript Bootstrap CDN --> 
+	
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  <script>
+    function updateTicker() {
+    const dateElement = document.getElementById("date");
+    const timeElement = document.getElementById("time");
+    const locationElement = document.getElementById("location");
+    
+    // Get current date and time
+    const currentDate = new Date();
+    const dateString = currentDate.toDateString();
+    const timeString = currentDate.toLocaleTimeString();
+    
+    // Check if the location has not been fetched before
+    if (!localStorage.getItem("location")) 
+    {
+      // Get geolocation (latitude and longitude)
+          if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(updateLocation);
+      }
+    
+          function updateLocation(position) {
+          const latitude = position.coords.latitude.toFixed(2);
+          const longitude = position.coords.longitude.toFixed(2);
+    
+    
+              // Save location to local storage
+              localStorage.setItem("location", "Location: " + latitude + ", " + longitude);
+          };
+      }
+    
+      // Retrieve and update location from local storage to your website
+      const locationString = localStorage.getItem("location");
+    
+      // Update ticker content
+      dateElement.innerHTML = "Date: " + dateString;
+      timeElement.innerHTML = "Time: " + timeString;
+      locationElement.innerHTML = locationString;
+          }
+    
+      // Update the ticker every second
+      setInterval(updateTicker, 1000);
+    
+      // Initial update
+      updateTicker();
+    
+    </script>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="about.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+      
+  li :hover {
+    background: linear-gradient( to right, #07525f 0%, #93ac06 100%);
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(37, 26, 99);
+    border-style: hidden;
+    text-decoration: underline;
+  }
+  ul li{
+    font-weight: bold ;
+  }
+      html, body {
+      min-height: 100%;
+      background-color: #ffffff;
+      }
+      body, div, form, input, select, textarea, label { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      
+      }
+      h1 {
+      position: absolute;
+      margin: 0;
+      font-size: 40px;
+      color: #fff;
+      z-index: 2;
+      line-height: 83px;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 20px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 8px  #52d4dd; 
+      }
+      .banner {
+      position: relative;
+      height: 300px;
+      background-image: url("https://d1k571r5p7i4n1.cloudfront.net/c.1130/large/popular_beaches_in_Cebu.jpg");  
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.2); 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 1px solid #73ceba;
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      input[type="date"] {
+      padding: 4px 5px;
+      }
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+      }
+      .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+      color: #0b5757;
+      }
+      .item input:hover, .item select:hover, .item textarea:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 3px 0 #089666;
+      color: #056d56;
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      .item span {
+      color: rgb(8, 16, 51);
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+      }
+      .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 20px;
+      color: #1f6969;
+      }
+      .item i {
+      right: 1%;
+      top: 30px;
+      z-index: 1;
+      }
+      [type="date"]::-webkit-calendar-picker-indicator {
+      right: 1%;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+      }
+      input[type=radio], input[type=checkbox]  {
+      display: none;
+      }
+      label.radio {
+      position: relative;
+      display: inline-block;
+      margin: 5px 20px 15px 0;
+      cursor: pointer;
+      }
+      .question span {
+      margin-left: 30px;
+      }
+      .question-answer label {
+      display: block;
+      }
+      label.radio:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      }
+      input[type=radio]:checked + label:before, label.radio:hover:before {
+      border: 2px solid #186366;
+      }
+      label.radio:after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      width: 8px;
+      height: 4px;
+      border: 3px solid #cc7a00;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      opacity: 0;
+      }
+      input[type=radio]:checked + label:after {
+      opacity: 1;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background: #012047;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background: #147970;
+      }
+      
+    </style>
+  
+
+  </head>
+  <body>
+
+
+  
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+              <img
+                src="logo.png"
+                height="100px"
+                width="100pxpx"
+                 loading="fast"
+              />
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" style="width: 120px; padding: 40; " target="_blank">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="abdullah/about.html" style="width: 120px; padding: 40; " target="_blank" > ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="abdullah/G2/gallery.html" style="width: 120px; padding: 40; " target="_blank">GELLARY</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 120px; padding: 40; ">
+                BEACHES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Grid Card Final/east.html">EAST</a></li>
+                <li><a class="dropdown-item" href="Grid Card Final/et.html">WEST</a></li>
+                <li><a class="dropdown-item" href="Grid Card Final/north.html">NORTH</a></li>
+                <li><a class="dropdown-item" href="Grid Card Final/south.html">SOUTH</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="images/contact.html" style="width: 120px; padding: 40; " target="_blank">CONTACT</a>
+            </li>
+          </ul>
+          <form action="d-flex"  role="search" > <a href='https://www.free-counters.org/'>https://www.Free-Counters.org</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=d0244865ba442935ea3e41a9de56b6ca6f84c674'></script>
+              <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1082786/t/2"></script></form>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="testbox">
+      <form action="/">
+        <div class="banner">
+         
+          <h1 style=" color: white;
+          text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 3), 0 0 5px rgb(112, 24, 90); font-family: Matura MT Script Capitals;
+           " > Registration Form</h1>
+        </div>
+        <p>costumer Information</p>
+        <div class="item">
+          <label for="name">Name<span>*</span></label>
+          <input id="name" type="text" name="name" required/>
+        </div>
+        <div class="item">
+          <label for="email">Email Address<span>*</span></label>
+          <input id="email" type="email" name="email" required/>
+        </div>
+        <div class="item">
+          <label for="address">Address<span>*</span></label>
+          <input id="address" type="address" name="address" required/>
+        </div>
+        <div class="item">
+          <label for="city">City<span>*</span></label>
+          <input id="city" type="text" name="city" required/>
+        </div>
+        <div class="item">
+          <label for="state">State<span>*</span></label>
+          <input id="state" type="text" name="state" required/>
+        </div>
+        <div class="item">
+          <label for="zip">Zip<span>*</span></label>
+          <input id="zip" type="text" name="zip" required/>
+        </div>
+        <div class="item">
+          <label for="phone">Phone<span>*</span></label>
+          <input id="phone" type="number" name="phone" required/>
+        </div>
+        <div class="item">
+          <label for="bdate">Date of Birth<span>*</span></label>
+          <input id="bdate" type="date" name="bdate" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="question">
+          <label>Gender</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_1" name="gender"/>
+              <label for="radio_1" class="radio"><span>Male</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_2" name="gender"/>
+              <label for="radio_2" class="radio"><span>Female</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label>Choose Race</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_3" name="race"/>
+              <label for="radio_3" class="radio"><span>5k - $25</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_4" name="race"/>
+              <label for="radio_4" class="radio"><span>10K - $25</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </body>
+   <!-- !-- js -->
+<div class="container-fluid text-center bg-dark text-light">
+  <div class="row">
+      <div class="col-12 col-md-4">
+          <div id="date" class="mb-3">Date: </div>
+      </div>
+      <div class="col-12 col-md-4">
+          <div id="time" class="mb-3">Time: </div>
+      </div>
+      <div class="col-12 col-md-4">
+          <div id="location" class="mb-3">Location: </div>
+      </div>
+  </div>
+</div>
+
+
+    
+<script>
+  function updateTicker() {
+  const dateElement = document.getElementById("date");
+  const timeElement = document.getElementById("time");
+  const locationElement = document.getElementById("location");
+  
+  // Get current date and time
+  const currentDate = new Date();
+  const dateString = currentDate.toDateString();
+  const timeString = currentDate.toLocaleTimeString();
+  
+  // Check if the location has not been fetched before
+  if (!localStorage.getItem("location")) 
+  {
+    // Get geolocation (latitude and longitude)
+        if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(updateLocation);
+    }
+  
+        function updateLocation(position) {
+        const latitude = position.coords.latitude.toFixed(2);
+        const longitude = position.coords.longitude.toFixed(2);
+  
+  
+            // Save location to local storage
+            localStorage.setItem("location", "Location: " + latitude + ", " + longitude);
+        };
+    }
+  
+    // Retrieve and update location from local storage to your website
+    const locationString = localStorage.getItem("location");
+  
+    // Update ticker content
+    dateElement.innerHTML = "Date: " + dateString;
+    timeElement.innerHTML = "Time: " + timeString;
+    locationElement.innerHTML = locationString;
+        }
+  
+    // Update the ticker every second
+    setInterval(updateTicker, 1000);
+  
+    // Initial update
+    updateTicker();
+  
+  </script>
+  
+  
+  
+  
+  <!-- Footer start -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+     BEAUTYOFBEACHE'S
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              SOCIAL media
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">facebook</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">instagram</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">whatsapp</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">twitter</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> PAKISTAN, ALL 78005, PK</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@BEAUTYOFBEACHE.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 92 234 567 88</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 92 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">BEAUTYOFBEACHE'S.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  
+  
+  </body>

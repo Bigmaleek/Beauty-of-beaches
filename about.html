@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+    li:hover {
+        background: linear-gradient(to right, #07525f 0%, #93ac06 100%);
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px rgb(37, 26, 99);
+        border-style: hidden;
+        text-decoration: underline;
+    }
+
+    ul li {
+        font-weight: bold;
+    }
+
+    /* Style the header text */
+    h1 {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 3), 0 0 5px rgb(12, 91, 105);
+        font-family: Matura MT Script Capitals;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+</style>
+
+<body>
+
+  <section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+        <h1>About Us</h1>
+    </div>
+</section>
+
+
+        <div class="container">
+            <p>Beaches are beautiful, relaxing places where you can unwind and enjoy nature. 
+              From the sound of waves crashing to the warm sand underfoot, beaches offer a peaceful escape.
+               Each beach is unique, with its own charm—whether it’s calm waters, dramatic cliffs,
+                or vibrant sunsets. Beaches offer a perfect mix of adventure and 
+                relaxation for everyone to enjoy.</p>
+        </div>
+
+        <br><br>
+
+        <div class="container">
+            <h2 class="text-center">beauty of beaches</h2>
+            <div class="row gy-3 gy-md-4 gy-lg-0">
+                <div class="col-12 col-lg-4">
+                    <div class="card bg-light p-3 m-0">
+                        <div class="row gy-3 gy-md-0 align-items-md-center">
+                            <div class="col-md-5">
+                                <img src="/images/4card.jpg" alt="Beach 1">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-0">
+                                    <h2 class="card-title h4 mb-3">Tropical Paradise</h2>
+                                    <p class="card-text">A peaceful beach with clear blue waters and soft sand, perfect for relaxation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="card bg-light p-3 m-0">
+                        <div class="row gy-3 gy-md-0 align-items-md-center">
+                            <div class="col-md-5">
+                                <img src="/images/12.webp" alt="Beach 2">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-0">
+                                    <h2 class="card-title h4 mb-3">Secluded Getaway</h2>
+                                    <p class="card-text">A quiet beach surrounded by cliffs, perfect for a peaceful retreat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="card bg-light p-3 m-0">
+                        <div class="row gy-3 gy-md-0 align-items-md-center">
+                            <div class="col-md-5">
+                                <img src="/images/5card.webp" alt="Beach 3">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-0">
+                                    <h2 class="card-title h4 mb-3">Vibrant Shores</h2>
+                                    <p class="card-text">A lively beach full of activities, perfect for adventure and fun in the sun.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>Contact us at: <strong>contact@beautyofbeaches.com</strong></p>
+        </div>
+    </footer>
+
+    <script>
+        var currentTime = new Date();
+        var currentDate = currentTime.toLocaleString();
+        document.getElementById("footerDate").innerHTML = currentDate;
+    </script>
+
+</body>
+</html>
